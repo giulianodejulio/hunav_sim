@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>hunav_evaluator</name>
+  <version>1.0.0</version>
+  <description>This package collects the data of the hunav simulations and computes different metrics</description>
+  <maintainer email="noeperez@upo.es">Noé Pérez-Higueras</maintainer>
+  <license>MIT</license>
+
+  <!-- ROS 1 Dependencies -->
+  <depend>rospy</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>hunav_msgs</depend>
+
+  <!-- Test dependencies -->
+  <exec_depend>pytest</exec_depend>
+
+  <!-- Build dependencies -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Optional: Build and runtime dependencies -->
+  <build_depend>setuptools</build_depend>
+  <build_export_depend>setuptools</build_export_depend>
+  <exec_depend>setuptools</exec_depend>
+
+  <!-- Optional: If you have other specific runtime dependencies, list them here -->
+  
+  <export>
+    <build_type>catkin</build_type>
+  </export>
+</package>

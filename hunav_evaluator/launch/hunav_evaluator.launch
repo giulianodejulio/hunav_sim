@@ -1,0 +1,11 @@
+<launch>
+  <!-- Declare the metrics_file argument with a default value -->
+  <arg name="metrics_file" default="$(find hunav_evaluator)/config/metrics.yaml" />
+
+  <!-- Launch the hunav_evaluator_node -->
+  <node name="hunav_evaluator_node" pkg="hunav_evaluator" type="hunav_evaluator_node.py" output="screen">
+    <!-- <param name="metrics_file" value="$(arg metrics_file)" /> -->
+    <!-- <param name="frequency" value="1.0" /> -->
+    <rosparam file="$(find hunav_evaluator)/config/metrics.yaml" command="load" ns=""/>
+  </node>
+</launch>
